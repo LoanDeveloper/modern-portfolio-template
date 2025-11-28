@@ -8,13 +8,13 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-white text-black shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] hover:scale-105 border border-transparent",
+          "bg-white/5 text-white border border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(124,58,237,0.5)] hover:border-transparent hover:bg-[linear-gradient(hsl(var(--background)),hsl(var(--background))),linear-gradient(to_right,var(--color-primary),#c084fc,#3b82f6)] hover:bg-origin-border hover:[background-clip:padding-box,border-box]",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90 hover:shadow-lg",
         outline:
-          "border border-white/10 bg-transparent hover:bg-white/5 hover:border-white/20 hover:text-white hover:shadow-[0_0_15px_rgba(255,255,255,0.05)] backdrop-blur-sm",
+          "border border-white/10 bg-transparent hover:shadow-[0_0_25px_rgba(124,58,237,0.5)] hover:border-transparent hover:bg-[linear-gradient(hsl(var(--background)),hsl(var(--background))),linear-gradient(to_right,var(--color-primary),#c084fc,#3b82f6)] hover:bg-origin-border hover:[background-clip:padding-box,border-box] hover:text-white backdrop-blur-sm",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80 hover:shadow-md",
+          "bg-secondary text-secondary-foreground hover:shadow-[0_0_25px_rgba(124,58,237,0.5)] hover:border-transparent hover:bg-[linear-gradient(hsl(var(--background)),hsl(var(--background))),linear-gradient(to_right,var(--color-primary),#c084fc,#3b82f6)] hover:bg-origin-border hover:[background-clip:padding-box,border-box] hover:text-white",
         ghost: "hover:bg-white/5 hover:text-white",
         link: "text-primary underline-offset-4 hover:underline",
       },
