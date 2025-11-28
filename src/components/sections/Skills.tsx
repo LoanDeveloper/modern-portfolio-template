@@ -24,14 +24,14 @@ const items = [
     title: "Mobile",
     description: "iOS & Android.",
     icon: <Smartphone className="w-6 h-6" />,
-    className: "md:col-span-3",
+    className: "md:col-span-2",
     tech: ["React Native", "Expo"]
   },
   {
     title: "DevOps",
     description: "CI/CD pipelines.",
     icon: <Terminal className="w-6 h-6" />,
-    className: "md:col-span-2",
+    className: "md:col-span-3",
     tech: ["Docker", "AWS", "Github Actions"]
   },
   {
@@ -45,7 +45,7 @@ const items = [
     title: "Performance",
     description: "Optimization.",
     icon: <Zap className="w-6 h-6" />,
-    className: "md:col-span-3",
+    className: "md:col-span-2",
     tech: ["Lighthouse", "Vercel"]
   },
 ];
@@ -66,7 +66,7 @@ export default function Skills() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 auto-rows-[1fr]">
+        <div className="grid grid-cols-1 md:grid-cols-7 gap-4 auto-rows-[1fr]">
           {items.map((item, index) => (
             <motion.div
               key={item.title}
