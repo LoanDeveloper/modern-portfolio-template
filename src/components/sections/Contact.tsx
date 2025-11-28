@@ -9,7 +9,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 export default function Contact() {
   return (
     <section id="contact" className="py-24 relative">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[128px] -z-10" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[128px] -z-10" />
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -30,25 +30,25 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="text-white font-medium">loan.thomy@example.com</p>
+                  <p className="text-white font-medium">loan.thomy@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Phone</p>
-                  <p className="text-white font-medium">+33 6 12 34 56 78</p>
+                  <p className="text-white font-medium">06 38 42 29 54</p>
                 </div>
               </div>
-               <div className="flex items-center gap-4">
-                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="text-white font-medium">Paris, France</p>
+                  <p className="text-white font-medium">Nantes, France</p>
                 </div>
               </div>
             </div>

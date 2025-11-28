@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      
+
       {/* Grid overlay for tech feel - Kept but simplified as background lights handle the color */}
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
 
@@ -71,9 +71,9 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="mt-20 pt-10 border-t border-white/5 flex items-center justify-center gap-8"
           >
-             <SocialLink href="#" icon={<Github className="w-5 h-5" />} label="Github" />
-             <SocialLink href="#" icon={<Linkedin className="w-5 h-5" />} label="LinkedIn" />
-             <SocialLink href="#" icon={<Mail className="w-5 h-5" />} label="Email" />
+            <SocialLink href="https://github.com/LoanDeveloper" icon={<Github className="w-5 h-5" />} label="Github" />
+            <SocialLink href="https://www.linkedin.com/in/loan-tmy/" icon={<Linkedin className="w-5 h-5" />} label="LinkedIn" />
+            <SocialLink href="mailto:loan.thomy@gmail.com" icon={<Mail className="w-5 h-5" />} label="Email" />
           </motion.div>
         </div>
       </div>
@@ -83,8 +83,8 @@ export default function Hero() {
 
 function SocialLink({ href, icon, label }: { href: string; icon: React.ReactNode; label: string }) {
   return (
-    <a 
-      href={href} 
+    <a
+      href={href}
       className="flex items-center gap-2 text-muted-foreground hover:text-white transition-colors group"
     >
       <span className="p-2 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors">
