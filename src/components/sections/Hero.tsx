@@ -59,7 +59,7 @@ export default function Hero() {
               </Link>
             </Button>
             <Button variant="outline" size="lg" className="h-12 px-8 rounded-full text-base" asChild>
-              <Link href="/cv.pdf">
+              <Link href="/cv.pdf" target="_blank" rel="noopener noreferrer">
                 Download CV <Download className="ml-2 w-4 h-4" />
               </Link>
             </Button>
@@ -82,9 +82,12 @@ export default function Hero() {
 }
 
 function SocialLink({ href, icon, label }: { href: string; icon: React.ReactNode; label: string }) {
+  const isMailto = href.startsWith("mailto:");
   return (
     <a
       href={href}
+      target={isMailto ? undefined : "_blank"}
+      rel={isMailto ? undefined : "noopener noreferrer"}
       className="flex items-center gap-2 text-muted-foreground hover:text-white transition-colors group"
     >
       <span className="p-2 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors">

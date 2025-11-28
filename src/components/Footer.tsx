@@ -8,17 +8,14 @@ export default function Footer() {
         <p className="text-sm text-muted-foreground">
           © {new Date().getFullYear()} Loan Thomy. All rights reserved.
         </p>
-        
+
         <div className="flex items-center gap-6">
-           <Link href="#" className="text-muted-foreground hover:text-white transition-colors">
-             <Github className="w-5 h-5" />
-           </Link>
-           <Link href="#" className="text-muted-foreground hover:text-white transition-colors">
-             <Linkedin className="w-5 h-5" />
-           </Link>
-           <Link href="#" className="text-muted-foreground hover:text-white transition-colors">
-             <Twitter className="w-5 h-5" />
-           </Link>
+          <Link href="https://github.com/LoanDeveloper" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-white transition-colors">
+            <Github className="w-5 h-5" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/loan-tmy/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-white transition-colors">
+            <Linkedin className="w-5 h-5" />
+          </Link>
         </div>
       </div>
     </footer>
