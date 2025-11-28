@@ -6,12 +6,11 @@ import { Layout, Server, Zap, Smartphone, Terminal, Cpu } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const items = [
-  // LIGNE 1 (Total 5 cols) : [ FRONTEND (3) ] [ BACKEND (1) ] [ MOBILE (1) ]
   {
     title: "Frontend Mastery",
     description: "Creating fluid, responsive interfaces.",
     icon: <Layout className="w-6 h-6" />,
-    className: "md:col-span-3", 
+    className: "md:col-span-2", 
     tech: ["React", "Next.js 15", "Tailwind", "Framer", "Three.js"]
   },
   {
@@ -28,27 +27,25 @@ const items = [
     className: "md:col-span-1",
     tech: ["React Native", "Expo"]
   },
-
-  // LIGNE 2 (Total 5 cols) : [ DEVOPS (1) ] [ SYSTEM (1) ] [ PERFORMANCE (3) ]
   {
     title: "DevOps",
     description: "CI/CD pipelines.",
     icon: <Terminal className="w-6 h-6" />,
-    className: "md:col-span-1",
+    className: "md:col-span-2",
     tech: ["Docker", "AWS", "Github Actions"]
   },
   {
     title: "System Design",
     description: "Architecture.",
     icon: <Cpu className="w-6 h-6" />,
-    className: "md:col-span-1",
+    className: "md:col-span-2",
     tech: ["Microservices", "Patterns"]
   },
    {
     title: "Performance",
     description: "Core Web Vitals optimization & Analytics.",
     icon: <Zap className="w-6 h-6" />,
-    className: "md:col-span-3",
+    className: "md:col-span-1",
     tech: ["Lighthouse", "Vercel Analytics", "Lazy Loading"]
   },
 ];
@@ -69,8 +66,7 @@ export default function Skills() {
           </p>
         </motion.div>
 
-        {/* Grille de 5 colonnes pour plus de flexibilité */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {items.map((item, index) => (
             <motion.div
               key={item.title}
