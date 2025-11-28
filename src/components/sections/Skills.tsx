@@ -10,28 +10,28 @@ const items = [
     title: "Frontend Mastery",
     description: "Creating fluid, responsive interfaces.",
     icon: <Layout className="w-6 h-6" />,
-    className: "md:col-span-2", 
+    className: "md:col-span-3 md:row-span-2", 
     tech: ["React", "Next.js 15", "Tailwind", "Framer", "Three.js"]
   },
   {
     title: "Backend",
     description: "Scalable APIs.",
     icon: <Server className="w-6 h-6" />,
-    className: "md:col-span-1",
+    className: "md:col-span-5",
     tech: ["NestJS", "Node.js", "PostgreSQL"]
   },
   {
     title: "Mobile",
     description: "iOS & Android.",
     icon: <Smartphone className="w-6 h-6" />,
-    className: "md:col-span-1",
+    className: "md:col-span-4",
     tech: ["React Native", "Expo"]
   },
   {
     title: "DevOps",
     description: "CI/CD pipelines.",
     icon: <Terminal className="w-6 h-6" />,
-    className: "md:col-span-2",
+    className: "md:col-span-4",
     tech: ["Docker", "AWS", "Github Actions"]
   },
   {
@@ -43,10 +43,10 @@ const items = [
   },
    {
     title: "Performance",
-    description: "Core Web Vitals optimization & Analytics.",
+    description: "Optimization.",
     icon: <Zap className="w-6 h-6" />,
-    className: "md:col-span-1",
-    tech: ["Lighthouse", "Vercel Analytics", "Lazy Loading"]
+    className: "md:col-span-3",
+    tech: ["Lighthouse", "Vercel"]
   },
 ];
 
@@ -66,7 +66,7 @@ export default function Skills() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 auto-rows-[1fr]">
           {items.map((item, index) => (
             <motion.div
               key={item.title}
