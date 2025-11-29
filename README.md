@@ -17,8 +17,13 @@ Perfect for developers looking to showcase their projects, skills, and experienc
 
 ## Getting Started
 
-Clone the repository and install dependencies:
+### Prerequisites
 
+- Node.js 18+ and npm installed on your machine
+
+### Installation
+
+Clone the repository and install dependencies:
 ```
 git clone https://github.com/LoanDeveloper/modern-portfolio-template.git
 cd modern-portfolio-template
@@ -33,10 +38,29 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser to view
 
 You can start editing the main page by modifying `app/page.tsx` for instant updates.
 
-Fonts are optimized automatically using [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) and [Geist](https://vercel.com/font).
+### Build for Production
+
+Create an optimized production build:
+```
+npm run build
+npm start
+```
+
+## Customization
+
+This template is designed to be easily customizable:
+
+- Edit `app/page.tsx` to modify the main portfolio page
+- Update components in the `components/` directory
+- Adjust styling in `tailwind.config.ts`
+- Configure site metadata in `app/layout.tsx`
 
 ## Learn More
 
 - [Next.js Documentation](https://nextjs.org/docs) — Full docs and API.
 - [Learn Next.js](https://nextjs.org/learn) — Interactive tutorial for beginners.
 - [Next.js GitHub repository](https://github.com/vercel/next.js) — Feedback and contributions welcome!
+
+## License
+
+MIT License - feel free to use this template for your own portfolio!
